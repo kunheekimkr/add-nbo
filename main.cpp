@@ -8,7 +8,7 @@ int main(int argc, char* argv[]){
 	FILE* f1 = fopen(argv[1], "rb");
 	fread(&a, sizeof(uint32_t), 1, f1);
 	FILE* f2 = fopen(argv[2], "rb");
-	fread(&b, sizeof(uint32_t), 2, f2);
+	fread(&b, sizeof(uint32_t), 1, f2);
 	
 	uint32_t result = addnbo(a,b);
 	
